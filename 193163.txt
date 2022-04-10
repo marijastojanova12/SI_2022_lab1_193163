@@ -1,0 +1,99 @@
+1.https://github.com/marijastojanova12/SI_2022_lab1_193163
+2.smeneto e imeto od main vo master
+3.
+4.
+$ git clone https://github.com/marijastojanova12/SI_2022_lab1_193163.git
+$ cd SI_2022_lab1_193163
+5.$ notepad shopping_list.txt
+$ git add shopping_list.txt
+$ git commit -m "Add 5 items to the shopping list"
+6.$ git commit -a -m "Add quantities to the items"
+7.$ git checkout -b branch1
+$ git checkout master
+$ git checkout -b branch2
+$ git checkout master
+8.$ git log
+commit cf8c6134fa6431caea9ed359dc67a1126270531d (HEAD -> master, origin/master, origin/HEAD, branch2, branch1)
+Author: marijastojanova12 <marijastojanova20@yahoo.com>
+Date:   Sun Apr 10 15:01:21 2022 +0200
+
+    Add quantities to the items
+
+commit d9e32169234552d137297163a901d8250ef0b15a
+Author: marijastojanova12 <marijastojanova20@yahoo.com>
+Date:   Sun Apr 10 14:58:45 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 37804d270071ce751855fa50261749f9e3750879
+Author: marijastojanova12 <102327517+marijastojanova12@users.noreply.github.com>
+Date:   Sat Apr 9 15:19:22 2022 +0200
+
+    Update README.md
+
+commit bcd473cad514ecf8b02f1059bd7eaf3ee1f31f2f
+Author: marijastojanova12 <102327517+marijastojanova12@users.noreply.github.com>
+Date:   Sat Apr 9 15:15:44 2022 +0200
+
+9.$ git push origin branch1
+$ git push origin branch2
+10.$ git checkout branch1
+11.$ git commit -a -m "Change quantity of item #5"
+12.$ git checkout master
+13.$ git commit -a -m "Change quantity of item #2"
+14.$ git push origin branch1
+$ git push origin branch2
+15.$ git checkout branch2
+16.$ git commit -a -m "Modify item #4"
+17.$ git log
+commit e0fe510dbbd3774c5b4592926bb3f32a95e2815c (HEAD -> branch2)
+Author: marijastojanova12 <marijastojanova20@yahoo.com>
+Date:   Sun Apr 10 15:35:21 2022 +0200
+
+    Modify item #4
+
+commit cf8c6134fa6431caea9ed359dc67a1126270531d (origin/master, origin/branch2, origin/HEAD)
+Author: marijastojanova12 <marijastojanova20@yahoo.com>
+Date:   Sun Apr 10 15:01:21 2022 +0200
+
+    Add quantities to the items
+
+commit d9e32169234552d137297163a901d8250ef0b15a
+Author: marijastojanova12 <marijastojanova20@yahoo.com>
+Date:   Sun Apr 10 14:58:45 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 37804d270071ce751855fa50261749f9e3750879
+Author: marijastojanova12 <102327517+marijastojanova12@users.noreply.github.com>
+Date:   Sat Apr 9 15:19:22 2022 +0200
+18.$ git commit -a -m "Modify item #4 and add item #6"
+19.$ git log
+commit 6839f076e90d51b02111a49c3bf41b3880182536 (HEAD -> branch2)
+Author: marijastojanova12 <marijastojanova20@yahoo.com>
+Date:   Sun Apr 10 15:37:19 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit e0fe510dbbd3774c5b4592926bb3f32a95e2815c
+Author: marijastojanova12 <marijastojanova20@yahoo.com>
+Date:   Sun Apr 10 15:35:21 2022 +0200
+
+    Modify item #4
+
+commit cf8c6134fa6431caea9ed359dc67a1126270531d (origin/master, origin/branch2, origin/HEAD)
+Author: marijastojanova12 <marijastojanova20@yahoo.com>
+Date:   Sun Apr 10 15:01:21 2022 +0200
+
+    Add quantities to the items
+
+commit d9e32169234552d137297163a901d8250ef0b15a
+Author: marijastojanova12 <marijastojanova20@yahoo.com>
+Date:   Sun Apr 10 14:58:45 2022 +0200
+20.$ git checkout master
+$ git merge branch1
+$ git commit -m "Merge branch1"
+21.$ git merge branch2
+Auto-merging shopping_list.txt
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
